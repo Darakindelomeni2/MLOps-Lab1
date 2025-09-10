@@ -1,13 +1,14 @@
+SHELL := /bin/bash
 install:
-	@echo "install requirements in HF_SA_MLOps";\
+	echo "install requirements in HF_SA_MLOps";\
     . start.sh; \
     pip install -r requirements.txt;
 init:
-	@echo "Creating Python virtual environment 'HF_SA_MLOps'"; \
+	echo "Creating Python virtual environment 'HF_SA_MLOps'"; \
 	python3 -m venv ../ENVS/HF_SA_MLOps; \
-	@echo "Activating Python virtual environment 'HF_SA_MLOps'"; \
+	echo "Activating Python virtual environment 'HF_SA_MLOps'"; \
 	. start.sh; \
-	@echo "Installing requirements"; \
+	echo "Installing requirements"; \
 	pip install -r requirements.txt; \
 	echo "Initialization complete"
 
